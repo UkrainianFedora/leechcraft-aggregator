@@ -9,7 +9,7 @@
 Name:           leechcraft-aggregator
 Summary:        RSS/Atom Feed Reader for LeechCraft
 Version:        0.6.75
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPLv2+
 Url:            http://leechcraft.org
 Source0:        http://dist.leechcraft.org/LeechCraft/%{version}/leechcraft-0.6.70-%{git_version}.tar.xz
@@ -21,6 +21,7 @@ BuildRequires: boost-devel
 BuildRequires: qt5-qtbase-devel
 BuildRequires: qt5-qtx11extras-devel
 BuildRequires: qt5-qtwebkit-devel
+BuildRequires: qt5-qtscript-devel
 BuildRequires: qt5-qttools-devel
 BuildRequires: bzip2-devel
 BuildRequires: qwt-qt5-devel
@@ -72,7 +73,7 @@ popd
 
 
 %changelog
-* Sat May 30 2015 Minh Ngo <minh@fedoraproject.org> - 0.6.75-2
+* Sat May 30 2015 Minh Ngo <minh@fedoraproject.org> - 0.6.75-3
 - 0.6.75-1, Qt5
 
 * Fri Dec 26 2014 Minh Ngo <minh@fedoraproject.org> - 0.6.70-1
